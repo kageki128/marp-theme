@@ -3,6 +3,7 @@ marp: true
 paginate: true
 theme: lab
 math: katex
+html: true
 ---
 
 <!-- _class: title -->
@@ -46,6 +47,12 @@ YYYY/MM/DD
 
 ---
 
+## 画像
+
+![](https://picsum.photos/seed/picsum/1920/1080)
+
+---
+
 ## 数式 / コードブロック
 
 $\LaTeX$ と `code block` も使える。
@@ -68,9 +75,31 @@ public class Main {
 
 ---
 
-## 図
+<!-- _class: two-cols -->
 
-1. まず[このいらすとやのリンク](https://www.irasutoya.com/2018/10/blog-post_723.html)から画像（`kenkyu_woman_seikou.png`）を右クリックでダウンロードしてください。
-2. この Markdown のあるディレクトリの中に `images` という名前のディレクトリを作り、先ほどダウンロードした画像を配置してください。これで準備が整いました。
+## 2カラムレイアウト
 
-![w:300 center](./images/kenkyu_woman_seikou.png)
+<div class="cols">
+  <div>
+
+### 左カラム
+
+左側のテキスト
+
+- 箇条書き1
+- 箇条書き2
+- 箇条書き3
+
+  </div>
+  <div>
+
+### 右カラム
+
+右側のテキスト
+
+- 箇条書き1
+- 箇条書き2
+- 箇条書き3
+
+  </div>
+</div>

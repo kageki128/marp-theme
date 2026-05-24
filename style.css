@@ -83,6 +83,17 @@ section::after {
   font-size: 1em;
 }
 
+section.two-cols .cols {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+section.two-cols .cols > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 section.title {
   border-left: 64px solid var(--color-highlight);
 }
