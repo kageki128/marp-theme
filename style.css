@@ -179,7 +179,7 @@ section.end p {
 }
 
 section:is(.section-head, .end)::after {
-  color: var(--color-highlight-strong);
+  content: none;
 }
 
 header {
