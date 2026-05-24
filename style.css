@@ -61,6 +61,9 @@ section.title :is(h1, h2, h3, h4, h5) strong {
 section.title p {
   text-align: right;
 }
+section.title p:first-of-type {
+  margin-top: 1.5em;
+}
 
 header {
   background-color: var(--color-highlight);

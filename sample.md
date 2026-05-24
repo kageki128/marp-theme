@@ -11,8 +11,6 @@ math: katex
 
 #### 〜Beamerを卒業しよう〜
 
-<br>
-
 **著者 太郎**
 ほげほげ研究室 M2
 YYYY/MM/DD
