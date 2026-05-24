@@ -42,7 +42,7 @@ section {
 }
 
 /* Use the first H2 as a visual header bar instead of Marp's _header directive. */
-section:not(.title, .section-head) > h2:first-child {
+section:not(.title, .section-head, .end) > h2:first-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -137,6 +137,33 @@ section.section-head h1 {
 }
 
 section.section-head::after {
+  color: var(--color-highlight-strong);
+}
+
+/* Closing slide */
+section.end {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+section.end h2 {
+  margin: 0;
+  color: var(--color-highlight-strong);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section.end p {
+  color: var(--color-foreground-muted);
+  text-align: center;
+}
+
+section.end::after {
   color: var(--color-highlight-strong);
 }
 
