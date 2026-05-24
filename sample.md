@@ -48,6 +48,18 @@ YYYY/MM/DD
 
 ---
 
+## 文字装飾
+
+- 文字色
+    - <span class="red">赤</span>
+    - <span class="cyan">シアン</span>
+    - <span class="gray">灰色</span>
+- 強調
+    - <span class="dotted">ドット</span>
+    - <span class="lined">マーカー</span>
+
+---
+
 ## 画像
 
 ![w:900 center](https://picsum.photos/seed/picsum/1920/1080)
