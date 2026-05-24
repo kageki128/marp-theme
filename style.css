@@ -38,7 +38,7 @@ section:not(.title) > h2:first-child {
   left: 0;
   right: 0;
   margin: 0;
-  padding: 12px 40px;
+  padding: 12px 140px 12px 40px;
   background-color: var(--color-highlight);
   color: #fff;
   font-size: 1em;
@@ -48,8 +48,19 @@ section:not(.title) > h2:first-child {
 
 /* https://github.com/marp-team/marpit/issues/271 */
 section::after {
-  font-weight: 700;
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  margin: 0;
+  padding: 12px 40px 12px 0;
+  text-align: right;
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #fff;
 }
 
 ul ul {
@@ -81,8 +92,11 @@ header {
 }
 
 blockquote {
-  max-width: 90%;
+  max-width: none;
+  left: 40px;
+  right: 40px;
   border-top: 0.1em dashed var(--color-border);
+  padding-top: 0.4em;
   color: var(--color-foreground-muted);
   font-size: 60%;
   position: absolute;
