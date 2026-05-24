@@ -12,6 +12,13 @@
   --color-border: #e2e8f0;
   --color-code-bg: #0f172a;
   --color-code-fg: #f1f5f9;
+  --color-code-comment: #8b949e;
+  --color-code-keyword: #ff7b72;
+  --color-code-string: #a5d6ff;
+  --color-code-function: #d2a8ff;
+  --color-code-type: #ffa657;
+  --color-code-number: #79c0ff;
+  --color-code-meta: #7ee787;
 }
 
 section {
@@ -97,4 +104,59 @@ code {
   background-color: var(--color-code-bg);
   color: var(--color-code-fg);
   font-family: 'Source Code Pro', monospace;
+}
+
+:is(pre, marp-pre) code {
+  display: block;
+  overflow-x: auto;
+  background-color: transparent;
+  color: var(--color-code-fg);
+  width: 100%;
+}
+
+:is(pre, marp-pre) {
+  background-color: var(--color-code-bg);
+  border-radius: 16px;
+}
+
+/* GitHub-like syntax highlighting for Marp/highlight.js code blocks. */
+:is(pre, marp-pre) code .hljs-comment,
+:is(pre, marp-pre) code .hljs-quote {
+  color: var(--color-code-comment);
+}
+
+:is(pre, marp-pre) code .hljs-keyword,
+:is(pre, marp-pre) code .hljs-selector-tag,
+:is(pre, marp-pre) code .hljs-literal {
+  color: var(--color-code-keyword);
+}
+
+:is(pre, marp-pre) code .hljs-string,
+:is(pre, marp-pre) code .hljs-regexp,
+:is(pre, marp-pre) code .hljs-selector-attr {
+  color: var(--color-code-string);
+}
+
+:is(pre, marp-pre) code .hljs-title.function_,
+:is(pre, marp-pre) code .hljs-function .hljs-title,
+:is(pre, marp-pre) code .hljs-title.class_ {
+  color: var(--color-code-function);
+}
+
+:is(pre, marp-pre) code .hljs-type,
+:is(pre, marp-pre) code .hljs-params,
+:is(pre, marp-pre) code .hljs-built_in {
+  color: var(--color-code-type);
+}
+
+:is(pre, marp-pre) code .hljs-number,
+:is(pre, marp-pre) code .hljs-symbol,
+:is(pre, marp-pre) code .hljs-attr {
+  color: var(--color-code-number);
+}
+
+:is(pre, marp-pre) code .hljs-meta,
+:is(pre, marp-pre) code .hljs-doctag,
+:is(pre, marp-pre) code .hljs-selector-id {
+  color: var(--color-code-meta);
 }

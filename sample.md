@@ -7,55 +7,48 @@ math: katex
 
 <!-- _class: title -->
 
-# Marpで研究室の発表スライドを作る
+# タイトル
 
-#### 〜Beamerを卒業しよう〜
+#### 〜サブタイトル〜
 
-**著者 太郎**
-ほげほげ研究室 M2
 YYYY/MM/DD
+林研究室 学士4年
+景浦 誠
+
 
 ---
 
 ## 目次
 
-1. はじめに
-2. コードブロック
-3. 数式
-4. 図
+1. セクション1
+2. セクション2
+3. セクション3
 
 ---
 
-## はじめに
+## 見出し
 
-- Marp とは **Markdown** で**スライド**を作成するためのソフトウェアである。
-  - 基本的な Markdown のシンタックスがサポートされている。
-- Markdown 上で `---` という区切り線を入れるだけで、次のページに移動することができる。$^1$
+### 小見出し
 
-> 1: Marp は CommonMark という Markdown の仕様に沿って開発されているため、CommonMark に含まれていない「脚注」の文法（`[^1]` を使うもの）が提供されていない。そこで、https://github.com/marp-team/marp/discussions/150#discussioncomment-1302384 を参照して擬似的に脚注を実現した。
+テキスト
+
+- 箇条書き1
+    - 箇条書きネスト
+- 箇条書き2$^1$
+
+> 1: 脚注
 
 ---
 
 ## コードブロック
 
-```python
-import torch
-print(torch.cuda.is_available())
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, Marp!");
+  }
+}
 ```
-
-こんな感じでコードブロックを書くことができる。
-
-```python
-from transformers import AutoModelForMaskedLM, AutoTokenizer
-model = AutoModelForMaskedLM.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
-tokenizer = AutoTokenizer.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
-
-inputs = tokenizer.encode_plus("私はとても[MASK]です。", return_tensors='pt')
-outputs = model(**inputs)
-tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
-```
-
-横幅は自動調整される（ドキュメントの[Auto-scaling](https://github.com/marp-team/marp-core#auto-scaling-features)を参照）。
 
 ---
 
