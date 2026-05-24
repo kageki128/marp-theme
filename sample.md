@@ -19,16 +19,16 @@ YYYY/MM/DD
 
 ---
 
-<!-- _header: 目次 -->
+## 目次
 
 1. はじめに
-1. コードブロック
-1. 数式
-1. 図
+2. コードブロック
+3. 数式
+4. 図
 
 ---
 
-<!-- _header: はじめに -->
+## はじめに
 
 - Marp とは **Markdown** で**スライド**を作成するためのソフトウェアである。
   - 基本的な Markdown のシンタックスがサポートされている。
@@ -38,7 +38,7 @@ YYYY/MM/DD
 
 ---
 
-<!-- _header: コードブロック -->
+## コードブロック
 
 ```python
 import torch
@@ -61,7 +61,7 @@ tokenizer.convert_ids_to_tokens(outputs.logits[0][1:-1].argmax(axis=-1))
 
 ---
 
-<!-- _header: 数式 -->
+## 数式
 
 $$ I_{xx}=\int\int_Ry^2f(x,y)\cdot{}dydx $$
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-<!-- _header: 図 -->
+## 図
 
 1. まず[このいらすとやのリンク](https://www.irasutoya.com/2018/10/blog-post_723.html)から画像（`kenkyu_woman_seikou.png`）を右クリックでダウンロードしてください。
 2. この Markdown のあるディレクトリの中に `images` という名前のディレクトリを作り、先ほどダウンロードした画像を配置してください。これで準備が整いました。
