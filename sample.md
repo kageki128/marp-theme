@@ -5,7 +5,7 @@ theme: lab
 math: katex
 ---
 
-<!-- _class: lead -->
+<!-- _class: title -->
 
 # Marpで研究室の発表スライドを作る
 
