@@ -15,8 +15,8 @@
   --color-emphasis-cyan: #06b6d4;
   --color-emphasis-red: #ff0000;
   --color-emphasis-gray: #808080a5;
-  --color-emphasis-orange: #ff9800;
-  --color-marker-orange: rgb(255, 165, 0, 0.6);
+  --color-dot: #ec4899;
+  --color-marker: rgba(236, 72, 153, 0.5);
 
   --color-code-bg: #0f172a;
   --color-code-fg: #f1f5f9;
@@ -285,14 +285,14 @@ code {
 
 /* Dot emphasis */
 .dotted {
-  -webkit-text-emphasis: filled circle var(--color-emphasis-orange);
-  text-emphasis: filled circle var(--color-emphasis-orange);
+  -webkit-text-emphasis: filled circle var(--color-dot);
+  text-emphasis: filled circle var(--color-dot);
   font-weight: 700;
 }
 
 /* Marker line emphasis */
 .lined {
-  background: linear-gradient(transparent 70%, var(--color-marker-orange) 0) no-repeat;
+  background: linear-gradient(transparent 70%, var(--color-marker) 70%) no-repeat;
   display: inline;
   padding: 0 4px;
   font-weight: 700;
