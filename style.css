@@ -116,6 +116,7 @@ section.two-cols .cols > div {
 
 section.title {
   border-left: 64px solid var(--color-highlight);
+  padding-top: calc(var(--header-total-height) + 96px);
 }
 
 section.title :is(h1, h2, h3, h4, h5) {
