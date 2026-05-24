@@ -29,7 +29,7 @@ YYYY/MM/DD
 
 <!-- _class: section-head -->
 
-# セクション見出し
+## セクション見出し
 
 ---
 

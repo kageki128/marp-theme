@@ -141,12 +141,12 @@ section.section-head {
   align-items: center;
 }
 
-section.section-head h1 {
+section.section-head :is(h1, h2) {
   margin: 0;
   padding: 24px 0 24px 16px;
   border-left: 16px solid var(--color-highlight);
   color: var(--color-highlight-strong);
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.3;
 }
