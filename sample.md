@@ -32,15 +32,23 @@ YYYY/MM/DD
 
 テキスト
 
-- 箇条書き1
+- 箇条書き
     - 箇条書きネスト
-- 箇条書き2$^1$
+- 箇条書き$^1$
 
 > 1: 脚注
 
 ---
 
-## コードブロック
+## 数式 / コードブロック
+
+$\LaTeX$ と `code block` も使える。
+
+$$
+f(x) = \int_{-\infty}^\infty
+    \hat f(\xi)\,e^{2 \pi i \xi x}
+    \,d\xi
+$$
 
 ```java
 public class Main {
@@ -50,20 +58,7 @@ public class Main {
 }
 ```
 
----
-
-## 数式
-
-$$ I_{xx}=\int\int_Ry^2f(x,y)\cdot{}dydx $$
-
-$$
-f(x) = \int_{-\infty}^\infty
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-$$
-
-こんな感じで数式を書くことができる。もちろんインラインの $\LaTeX$ も使える。  
-ついでに絵文字も使える:smile:
+絵文字も使える:smile:
 
 ---
 
