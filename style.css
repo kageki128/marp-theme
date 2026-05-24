@@ -39,7 +39,7 @@ section {
 }
 
 /* Use the first H2 as a visual header bar instead of Marp's _header directive. */
-section:not(.title) > h2:first-child {
+section:not(.title, .section-head) > h2:first-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -98,6 +98,28 @@ section.title p {
 }
 section.title p:first-of-type {
   margin-top: 1.5em;
+}
+
+/* Section heading slide */
+section.section-head {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+section.section-head h1 {
+  margin: 0;
+  padding: 24px 0 24px 16px;
+  border-left: 16px solid var(--color-highlight);
+  color: var(--color-highlight-strong);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+section.section-head::after {
+  color: var(--color-highlight-strong);
 }
 
 header {
