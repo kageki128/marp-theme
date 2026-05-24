@@ -49,7 +49,7 @@ YYYY/MM/DD
 
 ## 画像
 
-![](https://picsum.photos/seed/picsum/1920/1080)
+![w:900 center](https://picsum.photos/seed/picsum/1920/1080)
 
 ---
 
